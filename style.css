@@ -1,0 +1,141 @@
+
+body {
+    font-family: Oswald, PT Sans Narrow;
+    background: #333;
+    height: 100%;
+    margin: 0;
+}
+
+	.tabs {
+		width: 100%;
+        margin: 0px;
+    	}
+
+		article.tabs > input {
+            opacity: 0;
+            position: fixed;
+            bottom: 0%;
+        }
+        
+		.tab {
+			cursor: pointer;
+			background:  #555;
+			color: #eee;
+			border-radius: 0px 0px 0 0;
+			padding: 1.5%;
+            float: left;
+            width: 30.33%;
+            font: bold;
+            font-size: 2em;
+            letter-spacing: 1px;
+            text-align: center;
+		}
+
+			.tab:hover {
+				background: #666;
+			}
+
+			input:checked + .tab {
+				background: #fff;
+                color: #333;
+			}
+
+		.tabs input:nth-of-type(1):checked ~ .panels .panel:first-child,
+		.tabs input:nth-of-type(2):checked ~ .panels .panel:nth-child(2),
+		.tabs input:nth-of-type(3):checked ~ .panels .panel:last-child {
+            opacity: 1;
+            z-index: 10;
+		}
+
+		.panels {
+			float: left;
+			position: relative;
+			width: 100%;
+			background: #fff;
+            border-radius: 0 0px 0px 0px;
+            height: 100%;
+            z-index: 1;
+            /* font-family: PT Sans Narrow; */
+            color: #555;
+        }
+
+			.panel {
+				width: 100%;
+				opacity: 0;
+				position: absolute;
+				border-radius: 0 0px 0px 0px;
+				padding: 5%;
+                box-sizing: border-box;
+            }
+            
+				.panel h2 {
+                    margin: 0;
+                }
+                
+                div{
+                    background: white;
+                }
+
+                input:hover {
+                    background: rgb(240, 240, 240); 
+                }
+
+                input[type="number"]{
+                    margin: 0;
+                    width: 10em;
+                    height: 1.1em;
+                    color: #555;
+                    font-size: 1.1em;
+                }
+
+                /* input[type="submit"]:hover{
+                    background: #666;
+                    color: #fff;
+                    cursor: pointer;
+                }
+                input[type="reset"]:hover{
+                    background: #666;
+                    color: #fff;
+                    cursor: pointer;
+                } */
+                .title-h1 {
+                    font-size: 25px;
+                    margin-bottom: 10px;
+                }
+                
+                .text {
+                    font-size: 13px;
+                    line-height: 15.6px;
+                }
+
+                input[type="submit"]{
+                    margin: 0;
+                    background: #555;
+                    width: 20em;
+                    height: 3em;
+                    color: #fff;
+                    font-size: 0.9em;
+                    border: none;
+                    cursor: pointer;
+
+                    /* HEADER - Navigation Menu */
+.navigation-box {
+    padding: 65px 0 0 55px;
+}
+
+.navigation-link {
+    opacity: 0.5;
+    font-size: 15px;
+    text-decoration: none;
+    margin-right: 15px;
+}
+
+.navigation-link:last-child {
+    margin-right: 0;
+}
+
+/* CONTENT - Text Box */
+.text-box {
+    width: 467px;
+    height: 60vh;
+    margin: 71px 0 0 96px;}
